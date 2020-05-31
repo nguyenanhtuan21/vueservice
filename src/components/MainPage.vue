@@ -182,6 +182,10 @@ export default {
        var forms = document.querySelector('.form-submit')
        forms.classList.toggle('d-show')
      },
+     /**
+     * @author Tuan Nguyen 
+     * @description catch event save the change edit
+     */
      onSaveAfterEdit: async function(id){
        await axios.put('https://localhost:44309/api/Freshers/'+id, {
          fresherId: this.fresherEdit.fresherId,
@@ -192,6 +196,7 @@ export default {
        }).then(response => {
          alert('sửa thành công')
          this.reloadFresherList()
+         this.toggleForm()
        }).catch(err => {
          alert('sửa thất bại')
          this.reloadFresherList()
