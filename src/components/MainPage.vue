@@ -40,11 +40,11 @@
           <th scope="col">Actions</th>
         </tr>
         <tr>
-          <th scope="col"><input type="text" class="form-control" v-model="fresher.fresherId"></th>
-          <th scope="col"><input type="text" class="form-control" v-model="fresher.fresherCode"></th>
-          <th scope="col"><input type="text" class="form-control" v-model="fresher.firstName"></th>
-          <th scope="col"><input type="text" class="form-control" v-model="fresher.lastName"></th>
-          <th scope="col"><input type="text" class="form-control" v-model="fresher.fullName"></th>
+          <th scope="col"><input type="text" class="form-control" v-model="fresher.fresherId" required></th>
+          <th scope="col"><input type="text" class="form-control" v-model="fresher.fresherCode" required></th>
+          <th scope="col"><input type="text" class="form-control" v-model="fresher.firstName" required></th>
+          <th scope="col"><input type="text" class="form-control" v-model="fresher.lastName" required></th>
+          <th scope="col"><input type="text" class="form-control" v-model="fresher.fullName" required></th>
           <th scope="col"><button type="button" class="btn btn-primary" v-on:click="createFresher" >Add</button></th>
         </tr>
       </thead>
